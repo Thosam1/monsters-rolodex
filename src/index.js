@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; // how apps are built
+import ReactDOM from 'react-dom'; // related to web
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
