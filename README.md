@@ -2,6 +2,9 @@
 
 Test this app at : https://thosam1.github.io/monsters-rolodex/
 
+![image](https://user-images.githubusercontent.com/63594070/154532354-c027ffb2-456a-4550-9957-d9adf461a49e.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
