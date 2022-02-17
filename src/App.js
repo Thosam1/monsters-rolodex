@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { CardList } from './components/card-list/card-list.component';
-
+import { SearchBox } from './components/search-box/search-box.component';
 
 import './App.css';
 
@@ -15,6 +15,7 @@ class App extends Component {
 
       searchField: ''
     };
+
   }
 
   componentDidMount() {
@@ -23,6 +24,9 @@ class App extends Component {
     .then(users => this.setState( { monsters: users } ))
   }
 
+  onSearchChange = (event) => {
+    this.setState( { searchField: event.target.value })
+  }
 
   render(){
 
@@ -32,10 +36,14 @@ class App extends Component {
 
     return (
       <div className="App">
-        <input type='search' 
-          placeholder='search monsters' 
-          onChange={ e => this.setState( { searchField: e.target.value }) } 
+
+        <h1> Monster Rolodex </h1>
+
+        <SearchBox
+          placeholder='Search Monster'
+          onSearchChange={this.onSearchChange}
         />
+        
        
         <CardList monsters={ filteredMonsters } />
         
